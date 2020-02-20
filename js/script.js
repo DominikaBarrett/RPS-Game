@@ -37,3 +37,21 @@ else if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+// Wynik gry
+
+
+if(computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
+else if(computerMove == playerMove){
+    printMessage('Remis');
+  }
+else if(computerMove == 'papier' && playerMove == 'nozyce'){
+    printMessage('Ty wygrywasz!');
+  }
+else if(computerMove == 'nozyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+  }
+} else {
+    printMessage('Przegrywasz!');
