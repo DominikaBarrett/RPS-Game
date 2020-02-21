@@ -89,16 +89,17 @@ printMessage('Twój ruch to: ' + playerMove);
 // }
 
 
-function displayResult(computerMove, playerMove){
-  printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
 
-  if (computerMove == playerMove) {
+function displayResult(argComputerMove, argPlayerMove){
+  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+
+  if (argComputerMove == argPlayerMove) {
       printMessage('Remis!');
-  } else if (playerMove == 'kamień' && computerMove == 'nożyczki') {
+  } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyczki') {
       printMessage('Wygrałem!');
-  } else if (playerMove == 'papier' && computerMove == 'kamień') {
+  } else if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
       printMessage('Wygrałem!');
-  } else if (playerMove == 'nożyczki' && computerMove == 'papier') {
+  } else if (argPlayerMove == 'nożyczki' && argComputerMove == 'papier') {
       printMessage('Wygrałem!');
   } else {
       printMessage('Przegrywasz!');
