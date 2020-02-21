@@ -53,5 +53,6 @@ else if(computerMove == 'papier' && playerMove == 'nozyce'){
 else if(computerMove == 'nozyce' && playerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
   }
-} else {
+else {
     printMessage('Przegrywasz!');
+}
