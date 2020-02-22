@@ -1,3 +1,5 @@
+function playGame(){
+
 function getMoveName(argMoveId){
   if(argMoveId == 1){
     return 'kamień';
@@ -106,3 +108,4 @@ function displayResult(argComputerMove, argPlayerMove){
   }
 }
 
+displayResult();
