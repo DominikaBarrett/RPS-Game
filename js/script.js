@@ -1,4 +1,6 @@
-function playGame(){
+function playGame(playerInput){
+  
+  function clearMessages();
 
 function getMoveName(argMoveId){
   if(argMoveId == 1){
@@ -108,4 +110,18 @@ function displayResult(argComputerMove, argPlayerMove){
   }
 }
 
-displayResult();
+// displayResult();
+printMessage(displayResult(computerMove, playerMove));
+}
+
+document.getElementById('play-rock').addEventListener('click', function(){
+	printMessage(playGame(1));
+});
+
+document.getElementById('play-paper').addEventListener('click', function(){
+	printMessage(playGame(2));
+});
+
+document.getElementById('play-scissors').addEventListener('click', function(){
+	printMessage(playGame(3));
+});
