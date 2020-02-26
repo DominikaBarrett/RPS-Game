@@ -3,8 +3,8 @@ function playGame(playerInput) {
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Wylosowana liczba to: ' + randomNumber);
-  let argcomputerMove = getMoveName(randomNumber);
-  printMessage('Mój ruch to: ' + argcomputerMove);
+  let argComputerMove = getMoveName(randomNumber);
+  printMessage('Mój ruch to: ' + argComputerMove);
   
 
 
@@ -27,9 +27,9 @@ function playGame(playerInput) {
 
 
 
-  let argplayerMove = getMoveName(playerInput)
+  let argPlayerMove = getMoveName(playerInput)
   console.log('Gracz wpisał: ' + playerInput);
-  printMessage('Twój ruch to: ' + argplayerMove);
+  printMessage('Twój ruch to: ' + argPlayerMove);
 
 
   function getMoveName(playerInput) {
@@ -49,7 +49,7 @@ function playGame(playerInput) {
   }
 
 
-  /// Wynik gry
+  // / Wynik gry
 
 
 
@@ -72,7 +72,7 @@ function playGame(playerInput) {
   }
 
   // displayResult();
-  displayResult(argcomputerMove, argplayerMove);
+  displayResult(argComputerMove, argPlayerMove);
 
   document.getElementById('play-rock').addEventListener('click', function () {
     printMessage(playGame(1));
@@ -86,3 +86,4 @@ function playGame(playerInput) {
     printMessage(playGame(3));
   });
 }
+playGame()
