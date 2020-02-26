@@ -71,32 +71,22 @@ function playGame(playerInput) {
     }
   }
 
- 
-  
 
-// displayResult();
-displayResult(argComputerMove, argPlayerMove,);
+  // displayResult();
+  displayResult(argComputerMove, argPlayerMove);
+}
 
-  document.getElementById('play-rock').addEventListener('click', buttonClicked() {
-  printMessage(playGame(1));
+  document.getElementById('play-rock').addEventListener('click', function() {
+  (playGame(1));
 });
 
-document.getElementById('play-paper').addEventListener('click', buttonClicked() {
+document.getElementById('play-paper').addEventListener('click', function() {
   printMessage(playGame(2));
 });
 
-document.getElementById('play-scissors').addEventListener('click', buttonClicked() {
+document.getElementById('play-scissors').addEventListener('click', function() {
   printMessage(playGame(3));
 });
 
 
-  
-function buttonClicked() {
-    printMessage('Guzik został kliknięty');
-  }
-
-let button = document.getElementsByClassName('button');
-
-button.addEventListener('click', buttonClicked);
-
-playGame()
+  playGame()
