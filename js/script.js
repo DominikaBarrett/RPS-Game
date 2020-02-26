@@ -49,8 +49,8 @@ function playGame(playerInput) {
   }
 
 
-  // / Wynik gry
 
+  // / Wynik gry
 
 
 
@@ -71,19 +71,32 @@ function playGame(playerInput) {
     }
   }
 
-  // displayResult();
-  displayResult(argComputerMove, argPlayerMove);
+ 
+  
 
-  document.getElementById('play-rock').addEventListener('click', function () {
-    printMessage(playGame(1));
-  });
+// displayResult();
+displayResult(argComputerMove, argPlayerMove,);
 
-  document.getElementById('play-paper').addEventListener('click', function () {
-    printMessage(playGame(2));
-  });
+  document.getElementById('play-rock').addEventListener('click', buttonClicked() {
+  printMessage(playGame(1));
+});
 
-  document.getElementById('play-scissors').addEventListener('click', function () {
-    printMessage(playGame(3));
-  });
-}
+document.getElementById('play-paper').addEventListener('click', buttonClicked() {
+  printMessage(playGame(2));
+});
+
+document.getElementById('play-scissors').addEventListener('click', buttonClicked() {
+  printMessage(playGame(3));
+});
+
+
+  
+function buttonClicked() {
+    printMessage('Guzik został kliknięty');
+  }
+
+let button = document.getElementsByClassName('button');
+
+button.addEventListener('click', buttonClicked);
+
 playGame()
